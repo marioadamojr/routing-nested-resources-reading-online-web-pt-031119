@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   resources :authors, only: [:show] do
     # nested resource for posts
     resources :posts, only: [:show, :index]
+<<<<<<< HEAD
   end
+=======
+>>>>>>> 233004bcece6680005f1590f122030fcaf8001ad
 
   resources :posts, only: [:index, :show, :new, :create, :edit, :update]
 
